@@ -21,14 +21,12 @@
             overflow: hidden;
             text-align: center;
         }
-
         h1 {
             font-size: 3rem;
             color: #f5b041;
             margin-bottom: 10px;
             animation: glow 1.5s infinite alternate;
         }
-
         @keyframes glow {
             from {
                 text-shadow: 0 0 5px #f5b041, 0 0 10px #f7dc6f, 0 0 20px #f5b041;
@@ -37,26 +35,22 @@
                 text-shadow: 0 0 10px #f4d03f, 0 0 20px #f5b041, 0 0 30px #f4d03f;
             }
         }
-
         p {
             font-size: 1.2rem;
             line-height: 1.6;
             margin: 10px 0;
         }
-
         .quote {
             font-size: 1.5rem;
             font-style: italic;
             margin: 20px 0;
             color: #ffeb3b;
         }
-
         .new-year-list {
             margin: 20px 0;
             list-style: none;
             padding: 0;
         }
-
         .new-year-list li {
             font-size: 1.2rem;
             margin: 10px 0;
@@ -111,7 +105,6 @@
     <p>Dear *Mentor*,</p>
     <p>I’m Suhani Gupta, and I want to express my deepest gratitude to you. Thank you for your unwavering guidance, support, and kindness. Here's a little webpage to celebrate the New Year together!</p>
     <div class="quote">"A teacher’s guidance lights up the darkest paths. Thank you for being my beacon of knowledge and inspiration." – Suhani Gupta</div>
-    " – </div>
     <div class="quote">"Education is the passport to the future, and your lessons are a guiding light in my life. Thank you for everything!"</div>
     <p>🌟 My New Year Wishes 🌟</p>
     <ul class="new-year-list">
@@ -125,17 +118,14 @@
         <p>With heartfelt gratitude,</p>
         <p><strong>Suhani Gupta</strong></p>
     </div>
-
     <script>
         const fireworksContainer = document.getElementById('fireworks');
-
         function createFirework() {
             const firework = document.createElement('div');
             firework.classList.add('firework');
             firework.style.left = Math.random() * 100 + 'vw';
             firework.style.top = Math.random() * 100 + 'vh';
             fireworksContainer.appendChild(firework);
-
             setTimeout(() => {
                 firework.remove();
             }, 1500);
